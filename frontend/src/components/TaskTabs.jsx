@@ -35,7 +35,7 @@ export default function TaskTabs() {
       case "add":
         return (
           <TaskManager
-            tasks={tasks}
+            tasks={tasks.filter((t) => !t.completed)}
             onAdd={addTask}
             onToggle={toggleComplete}
             onDelete={deleteTask}

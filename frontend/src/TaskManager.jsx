@@ -41,7 +41,6 @@ const TaskManager = ({
               value={newTask}
               onChange={(e) => setNewTask(e.target.value)}
             />
-
             <textarea
               className="border border-gray-300 px-3 py-2 rounded-md w-full"
               placeholder="Task description (optional)"
